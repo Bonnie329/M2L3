@@ -4,8 +4,14 @@ body {
     background-color: #f0f0f0; /* El color del fondo de la página web */
     color: #333333; /* El color del texto*/ 
 }
-h1 {
+@keyframes color-change {
+    0% {color: rgb(109, 0, 172);}
+    50% {color: rgb(255, 8, 0);}
+    100% {color: blue;}
+    h1 {animation: color-change 3s infinite;}}
+h1:hover {
     color: #00a800; /* El color de la cabecera */
+    animation: color-change 3s infinite;
     font-size: 24px; /* El tamaño de la fuente de la cabecera */
     font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
 }
